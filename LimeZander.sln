@@ -3,9 +3,15 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30011.22
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Middleware.LimeZander.Api", "Middleware.LimeZander.Api\Middleware.LimeZander.Api.csproj", "{B300EB41-5BCE-43AA-9846-11FD17B93289}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Middleware.LimeZander.Api", "Middleware.LimeZander.Api\Middleware.LimeZander.Api.csproj", "{B300EB41-5BCE-43AA-9846-11FD17B93289}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Middleware", "Middleware", "{2C03B716-1734-4FA0-BFD2-3249EB5D26DA}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Data", "Data", "{AAF3856D-8FB7-43D5-8E44-B2FD949CC213}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Data.LimeZander.Model", "Data.LimeZander.Model\Data.LimeZander.Model.csproj", "{C759D3CB-A800-4367-8BB6-6213C0F2AAF8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Data.LimeZander.Persistence", "Data.LimeZander.Persistence\Data.LimeZander.Persistence.csproj", "{CBCBA14F-F0BC-4FF2-88E0-096E16062398}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -17,12 +23,22 @@ Global
 		{B300EB41-5BCE-43AA-9846-11FD17B93289}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B300EB41-5BCE-43AA-9846-11FD17B93289}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B300EB41-5BCE-43AA-9846-11FD17B93289}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C759D3CB-A800-4367-8BB6-6213C0F2AAF8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C759D3CB-A800-4367-8BB6-6213C0F2AAF8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C759D3CB-A800-4367-8BB6-6213C0F2AAF8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C759D3CB-A800-4367-8BB6-6213C0F2AAF8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CBCBA14F-F0BC-4FF2-88E0-096E16062398}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CBCBA14F-F0BC-4FF2-88E0-096E16062398}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CBCBA14F-F0BC-4FF2-88E0-096E16062398}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CBCBA14F-F0BC-4FF2-88E0-096E16062398}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{B300EB41-5BCE-43AA-9846-11FD17B93289} = {2C03B716-1734-4FA0-BFD2-3249EB5D26DA}
+		{C759D3CB-A800-4367-8BB6-6213C0F2AAF8} = {AAF3856D-8FB7-43D5-8E44-B2FD949CC213}
+		{CBCBA14F-F0BC-4FF2-88E0-096E16062398} = {AAF3856D-8FB7-43D5-8E44-B2FD949CC213}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {622898DE-1A75-4280-92C6-7F52D48F3D5D}
