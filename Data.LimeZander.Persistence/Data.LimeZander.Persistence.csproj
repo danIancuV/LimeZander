@@ -16,4 +16,9 @@
     <ProjectReference Include="..\Data.LimeZander.Model\Data.LimeZander.Model.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Repositories\Interfaces\" />
+    <Folder Include="Repositories\Implementation\" />
+  </ItemGroup>
+
 </Project>

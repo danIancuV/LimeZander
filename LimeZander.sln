@@ -9,9 +9,9 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Middleware", "Middleware", 
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Data", "Data", "{AAF3856D-8FB7-43D5-8E44-B2FD949CC213}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Data.LimeZander.Model", "Data.LimeZander.Model\Data.LimeZander.Model.csproj", "{C759D3CB-A800-4367-8BB6-6213C0F2AAF8}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Data.LimeZander.Model", "Data.LimeZander.Model\Data.LimeZander.Model.csproj", "{C759D3CB-A800-4367-8BB6-6213C0F2AAF8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Data.LimeZander.Persistence", "Data.LimeZander.Persistence\Data.LimeZander.Persistence.csproj", "{CBCBA14F-F0BC-4FF2-88E0-096E16062398}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Data.LimeZander.Persistence", "Data.LimeZander.Persistence\Data.LimeZander.Persistence.csproj", "{CBCBA14F-F0BC-4FF2-88E0-096E16062398}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
