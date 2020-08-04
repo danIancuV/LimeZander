@@ -1,13 +1,16 @@
 <div class = "header">
     <div>
-        <img src = 'assets/img/page_stamp_gray.png' alt = "zander picture" width="135px" height="135px">
+        <img src = 'assets/img/page_stamp_white.png' alt = "zander picture" width="135px" height="135px">
     </div>
     <div>
-      
- 
-            <input placeholder="Just a placeholder">
-     
+        <mat-icon>search</mat-icon>
+        <mat-form-field  appearance="legacy">
+            
+            <input matInput type="text" [formControl]="search">           
+        </mat-form-field>
     </div>
-    
-
+    <div class = "contact">
+        <p>Comenzi telefonice:</p>
+        <p>0733 880 967</p>
+    </div>
 </div>
