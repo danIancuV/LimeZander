@@ -1,16 +1,18 @@
-<div class = "header">
-    <div>
-        <img src = 'assets/img/page_stamp_white.png' alt = "zander picture" width="135px" height="135px">
+<div class="header" fxLayout="row" fxLayoutAlign="space-around center">
+    <div >
+        <img class = "zander-image" src = 'assets/img/page_stamp_white.png' alt = "zander picture" width="135px" height="135px">
+    </div>   
+    <div class = "contact" fxLayout="column" fxLayoutAlign="space-between center">  
+        <span>Detalii si comenzi</span> 
+        <div fxLayout="row" fxLayoutAlign="space-between center">
+            <mat-icon>phone</mat-icon>
+            <span>0733 880 967</span>  
+        </div>          
     </div>
-    <div>
+    <div class = "search" fxLayout="row" fxLayoutAlign="space-around center">
         <mat-icon>search</mat-icon>
-        <mat-form-field  appearance="legacy">
-            
+        <mat-form-field  appearance="legacy">           
             <input matInput type="text" [formControl]="search">           
         </mat-form-field>
-    </div>
-    <div class = "contact">
-        <p>Comenzi telefonice:</p>
-        <p>0733 880 967</p>
     </div>
 </div>
