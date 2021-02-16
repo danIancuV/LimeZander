@@ -15,6 +15,6 @@ namespace Data.LimeZander.Model
     {
        Mulineta,
        Lanseta,
-       Husa
+       AccesoriiBagajerie
     }
 }

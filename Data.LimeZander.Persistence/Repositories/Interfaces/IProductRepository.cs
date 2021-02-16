@@ -9,6 +9,8 @@ namespace Data.LimeZander.Persistence.Repositories.Interfaces
     {
         IEnumerable<Product> GetProducts();
 
+        IEnumerable<Product> GetProductTypes(ProductType productType);
+
         Product GetProduct(int id);
 
         void AddProduct(Product product);

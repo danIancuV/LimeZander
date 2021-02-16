@@ -8,6 +8,7 @@ using System.Text;
 
 namespace Data.LimeZander.Persistence.Repositories.Implementation
 {
+
     public class ProductRepository : BaseRepository, IProductRepository
     {
         public ProductRepository(LimeZanderContext context) : base(context)
@@ -17,6 +18,11 @@ namespace Data.LimeZander.Persistence.Repositories.Implementation
         public IEnumerable<Product> GetProducts()
         {
             return _context.Products.AsEnumerable();
+        }
+
+        public IEnumerable<Product> GetProductTypes(ProductType productType)
+        {
+            return _context.Products.Where(x => x.ProductType == productType).AsEnumerable();
         }
 
         public Product GetProduct(int id)
