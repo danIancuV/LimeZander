@@ -25,6 +25,10 @@ const routes: Routes = [
       {
         path: 'rods',
         component: HomeComponent
+      },
+      {
+        path: 'accessories',
+        component: HomeComponent
       }
     ]
   }

@@ -19,13 +19,23 @@ namespace Middleware.LimeZander.Api.Controllers
 
         // GET: api/Products
         [HttpGet]
+        [Route("")]
         public ActionResult<IEnumerable<Product>> GetProducts()
         {
             return _productRepository.GetProducts().ToList();
         }
 
-        // GET: api/Products/5
-        [HttpGet("{id}")]
+        // GET: api/Products/0
+        [HttpGet]
+        [Route("products/{type}")]
+        public ActionResult<IEnumerable<Product>> GetCategory(ProductType type)
+        {
+            return _productRepository.GetProductTypes(type).ToList();
+        }
+
+        // GET: api/Product/5
+        [HttpGet]
+        [Route("{id}")]
         public ActionResult<Product> GetProduct(int id)
         {
             var product = _productRepository.GetProduct(id);
@@ -41,6 +51,7 @@ namespace Middleware.LimeZander.Api.Controllers
 
         // POST: api/Products
         [HttpPost]
+        [Route("")]
         public IActionResult PostProduct(Product product)
         {
             _productRepository.AddProduct(product);
@@ -48,8 +59,9 @@ namespace Middleware.LimeZander.Api.Controllers
             return Ok(product);
         }
 
-        // PUT: api/Products/5
-        [HttpPut("{id}")]
+        // PUT: api/Product/5
+        [HttpPut]
+        [Route("{id}")]
         public IActionResult PutProduct(int id, Product product)
         {
             if (id != product.Id)
@@ -63,7 +75,8 @@ namespace Middleware.LimeZander.Api.Controllers
         }
 
         // DELETE: api/Products/5
-        [HttpDelete("{id}")]
+        [HttpDelete]
+        [Route("{id}")]
         public IActionResult DeleteProduct(int id)
         {
             var product = _productRepository.GetProduct(id);
