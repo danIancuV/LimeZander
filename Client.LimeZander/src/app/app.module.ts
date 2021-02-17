@@ -15,6 +15,9 @@ import { HomeComponent } from './home/home.component';
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
 import { CategoriesComponent } from './categories/categories.component';
+import { ReelsComponent } from './products/reels/reels.component';
+import { RodsComponent } from './products/rods/rods.component';
+import { AccessoriesComponent } from './products/accessories/accessories.component';
 
 @NgModule({
   declarations: [
@@ -23,6 +26,9 @@ import { CategoriesComponent } from './categories/categories.component';
     HeaderComponent,
     FooterComponent,
     CategoriesComponent,
+    ReelsComponent,
+    RodsComponent,
+    AccessoriesComponent,
     
   ],
   imports: [
