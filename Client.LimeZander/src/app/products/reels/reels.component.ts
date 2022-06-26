@@ -6,6 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./reels.component.less']
 })
 export class ReelsComponent implements OnInit {
+reels: any;
 
   constructor() { }
 

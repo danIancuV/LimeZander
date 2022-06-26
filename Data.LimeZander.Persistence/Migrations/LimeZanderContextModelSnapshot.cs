@@ -14,7 +14,7 @@ namespace Data.LimeZander.Persistence.Migrations
         {
 #pragma warning disable 612, 618
             modelBuilder
-                .HasAnnotation("ProductVersion", "3.1.5")
+                .HasAnnotation("ProductVersion", "3.1.26")
                 .HasAnnotation("Relational:MaxIdentifierLength", 128)
                 .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
@@ -35,6 +35,9 @@ namespace Data.LimeZander.Persistence.Migrations
                         .HasColumnType("bigint");
 
                     b.Property<int>("ProductType")
+                        .HasColumnType("int");
+
+                    b.Property<int>("SoldQuantity")
                         .HasColumnType("int");
 
                     b.HasKey("Id");

@@ -18,6 +18,7 @@ import { CategoriesComponent } from './categories/categories.component';
 import { ReelsComponent } from './products/reels/reels.component';
 import { RodsComponent } from './products/rods/rods.component';
 import { AccessoriesComponent } from './products/accessories/accessories.component';
+import { ProductComponent } from './products/product/product.component';
 
 @NgModule({
   declarations: [
@@ -29,6 +30,7 @@ import { AccessoriesComponent } from './products/accessories/accessories.compone
     ReelsComponent,
     RodsComponent,
     AccessoriesComponent,
+    ProductComponent,
     
   ],
   imports: [

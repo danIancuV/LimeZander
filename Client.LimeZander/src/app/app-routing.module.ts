@@ -5,6 +5,7 @@ import { HomeComponent } from './home/home.component';
 import { CategoriesComponent } from './categories/categories.component';
 import { ReelsComponent } from './products/reels/reels.component';
 import { RodsComponent } from './products/rods/rods.component';
+import { AccessoriesComponent } from './products/accessories/accessories.component';
 
 
 const routes: Routes = [
@@ -30,7 +31,7 @@ const routes: Routes = [
       },
       {
         path: 'accessories',
-        component: CategoriesComponent
+        component: AccessoriesComponent
       }
     ]
   }
