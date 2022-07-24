@@ -5,6 +5,13 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="Migrations\20200619102515_initial.cs" />
+    <Compile Remove="Migrations\20200619102515_initial.Designer.cs" />
+    <Compile Remove="Migrations\20220626125657_qty_prop_added.cs" />
+    <Compile Remove="Migrations\20220626125657_qty_prop_added.Designer.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="3.1.5" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="3.1.5">
       <PrivateAssets>all</PrivateAssets>

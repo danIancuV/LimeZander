@@ -9,14 +9,14 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace Data.LimeZander.Persistence.Migrations
 {
     [DbContext(typeof(LimeZanderContext))]
-    [Migration("20200619102515_initial")]
-    partial class initial
+    [Migration("20220626140024_InitialCreate")]
+    partial class InitialCreate
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
-                .HasAnnotation("ProductVersion", "3.1.5")
+                .HasAnnotation("ProductVersion", "3.1.26")
                 .HasAnnotation("Relational:MaxIdentifierLength", 128)
                 .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
@@ -37,6 +37,9 @@ namespace Data.LimeZander.Persistence.Migrations
                         .HasColumnType("bigint");
 
                     b.Property<int>("ProductType")
+                        .HasColumnType("int");
+
+                    b.Property<int>("SoldQuantity")
                         .HasColumnType("int");
 
                     b.HasKey("Id");

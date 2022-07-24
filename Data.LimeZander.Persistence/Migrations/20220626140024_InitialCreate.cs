@@ -2,7 +2,7 @@
 
 namespace Data.LimeZander.Persistence.Migrations
 {
-    public partial class initial : Migration
+    public partial class InitialCreate : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
@@ -15,7 +15,8 @@ namespace Data.LimeZander.Persistence.Migrations
                     Name = table.Column<string>(nullable: true),
                     ProductType = table.Column<int>(nullable: false),
                     Description = table.Column<string>(nullable: true),
-                    Price = table.Column<long>(nullable: false)
+                    Price = table.Column<long>(nullable: false),
+                    SoldQuantity = table.Column<int>(nullable: false)
                 },
                 constraints: table =>
                 {

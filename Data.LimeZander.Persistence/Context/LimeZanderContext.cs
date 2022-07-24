@@ -11,6 +11,6 @@ namespace Data.LimeZander.Persistence
         {
         }
 
-        public DbSet<Product> Products { get; set; }
+        public virtual DbSet<Product> Products { get; set; }
     }
 }

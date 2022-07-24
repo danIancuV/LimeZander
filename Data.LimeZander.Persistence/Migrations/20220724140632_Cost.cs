@@ -2,21 +2,21 @@
 
 namespace Data.LimeZander.Persistence.Migrations
 {
-    public partial class qty_prop_added : Migration
+    public partial class Cost : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
-            migrationBuilder.AddColumn<int>(
-                name: "SoldQuantity",
+            migrationBuilder.AddColumn<long>(
+                name: "Cost",
                 table: "Products",
                 nullable: false,
-                defaultValue: 0);
+                defaultValue: 0L);
         }
 
         protected override void Down(MigrationBuilder migrationBuilder)
         {
             migrationBuilder.DropColumn(
-                name: "SoldQuantity",
+                name: "Cost",
                 table: "Products");
         }
     }
